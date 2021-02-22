@@ -387,6 +387,7 @@ GameObject:
   - component: {fileID: 809892682}
   - component: {fileID: 809892681}
   - component: {fileID: 809892683}
+  - component: {fileID: 809892684}
   m_Layer: 5
   m_Name: Jugar
   m_TagString: Untagged
@@ -483,6 +484,47 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 809892684}
+          m_MethodName: TriggerEvent
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &809892684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809892679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -745406591, guid: 220224b43fc464c28bc0e8de8f54a432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Trigger:
+    m_IsTriggerExpanded: 1
+    m_Type: 1
+    m_LifecycleEvent: 0
+    m_ApplyRules: 0
+    m_Rules:
+      m_Rules: []
+    m_TriggerBool: 0
+    m_InitTime: 5
+    m_RepeatTime: 5
+    m_Repetitions: 0
+    repetitionCount: 0
+  m_EventPayload:
+    m_IsEventExpanded: 1
+    m_StandardEventType: CustomEvent
+    m_Parameters:
+      m_Parameters: []
+    m_Name: PlayGameDay2
 --- !u!1 &1223615362
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,8 +659,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 16, y: -510}
-  m_SizeDelta: {x: 1022.5, y: 180.5}
+  m_AnchoredPosition: {x: 16, y: -527.6}
+  m_SizeDelta: {x: 683.8, y: 215.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1389090831
 MonoBehaviour:
@@ -640,18 +682,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a6f60bce8fb7c4bc3b38c9cc230de624, type: 3}
-    m_FontSize: 144
+    m_FontSize: 212
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 6
-    m_MaxSize: 180
+    m_MaxSize: 231
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2 Furious
+  m_Text: cars
 --- !u!222 &1389090832
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1002,7 +1044,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a6f60bce8fb7c4bc3b38c9cc230de624, type: 3}
-    m_FontSize: 242
+    m_FontSize: 227
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 6
@@ -1013,7 +1055,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2 Fast
+  m_Text: Casual
 --- !u!222 &2111399243
 CanvasRenderer:
   m_ObjectHideFlags: 0

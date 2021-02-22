@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Analytics;
+using System.Collections.Generic;
 
 public class MotorCarreteras : MonoBehaviour {
 
@@ -55,13 +56,17 @@ public class MotorCarreteras : MonoBehaviour {
 		BuscoCalles();
 	}
 
-	public void JuegoTerminado()
+	public void JuegoTerminado(int distanciaFinal)
 	{
 		cocheGO.GetComponent<AudioSource>().Stop();
 		audioFXScript.FXMusic();
 		bgFinalGO.SetActive(true);
-		AnalyticsResult analyticsResult = Analytics.CustomEvent("Juego Terminado");
-		Debug.Log(analyticsResult);
+
+		AnalyticsEvent.Custom("Distancia_final", new Dictionary<string, object>
+		{
+			{ "Distancia_final", distanciaFinal },
+		}
+		);
 	}
 
 	void BuscoCalles()

@@ -37,7 +37,7 @@ public class Cronometro : MonoBehaviour
         if (tiempo <= 0.99f && MotorCarreteras.juegoTerminado == false)
 		{
             MotorCarreteras.juegoTerminado = true;
-            MotorCarreteras.JuegoTerminado();
+            MotorCarreteras.JuegoTerminado((int)distancia);
             txtDistanciaFinal.text = ((int)distancia).ToString() + " mts";
             txtTiempo.text = "0:00";
         }

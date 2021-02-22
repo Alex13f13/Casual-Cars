@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: BlueThunder
-  productName: 2Fast2Furious
+  productName: Casual_Cars
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -729,7 +729,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   cloudProjectId: 3e739f13-9e98-4fb2-932c-c4360c937656
   framebufferDepthMemorylessMode: 0
-  projectName: Casual_Cars
+  projectName: TFG_Casual_Cars
   organizationId: alex13f13
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
