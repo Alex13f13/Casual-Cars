@@ -21,10 +21,10 @@ public class Cronometro : MonoBehaviour
         motorCarreterasGO = GameObject.Find("MotorCarreteras");
         MotorCarreteras = motorCarreterasGO.GetComponent<MotorCarreteras>();
 
-        txtTiempo.text = "2:00";
+        txtTiempo.text = "1:20";
         txtDistancia.text = "0";
 
-        tiempo = 120;
+        tiempo = 80;
     }
 
     void Update()
@@ -36,10 +36,7 @@ public class Cronometro : MonoBehaviour
         
         if (tiempo <= 0.99f && MotorCarreteras.juegoTerminado == false)
 		{
-            MotorCarreteras.juegoTerminado = true;
-            MotorCarreteras.JuegoTerminado((int)distancia);
-            txtDistanciaFinal.text = ((int)distancia).ToString() + " mts";
-            txtTiempo.text = "0:00";
+            Finish();
         }
     }
 
@@ -48,12 +45,27 @@ public class Cronometro : MonoBehaviour
     void TiempoDistancia()
 	{
         distancia += Time.deltaTime * MotorCarreteras.velocidad;
-        txtDistancia.text = ((int)distancia).ToString();
+        txtDistancia.text = ((int)distancia).ToString();      
 
         tiempo -= Time.deltaTime;
         int minutos = (int)tiempo / 60;
         int segundos = (int)tiempo % 60;
         txtTiempo.text = minutos.ToString() + ":" + segundos.ToString().PadLeft(2,'0');//Escritura en el cronometro de la pantalla
+	}
+
+    public void Finish()
+	{
+        MotorCarreteras.juegoTerminado = true;
+        MotorCarreteras.JuegoTerminado((int)distancia);
+        
+        txtDistanciaFinal.text = ((int)distancia).ToString() + " mts";
+        txtTiempo.text = "0:00";
+        Time.timeScale = 0f;
+    }
+
+    public void RestartVelocity()
+	{
+        MotorCarreteras.velocidad = 6;
 	}
 
     #endregion

@@ -21,7 +21,8 @@ public class Fundidos : MonoBehaviour
 	{
         Fundido.CrossFadeAlpha(1, 0.5f, false);
         StartCoroutine(CambioEscena(escenas[s]));
-	}
+        Time.timeScale = 1f;
+    }
 
     IEnumerator CambioEscena(string escena)
 	{

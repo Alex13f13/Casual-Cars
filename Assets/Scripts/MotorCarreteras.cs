@@ -51,7 +51,7 @@ public class MotorCarreteras : MonoBehaviour {
 
 		cocheGO = GameObject.FindObjectOfType<Coche>().gameObject;
 
-		velocidad = 12;
+		velocidad = 6;
 		MedirPantalla();
 		BuscoCalles();
 	}
@@ -62,11 +62,11 @@ public class MotorCarreteras : MonoBehaviour {
 		audioFXScript.FXMusic();
 		bgFinalGO.SetActive(true);
 
-		AnalyticsEvent.Custom("Distancia_final", new Dictionary<string, object>
-		{
-			{ "Distancia_final", distanciaFinal },
-		}
-		);
+		//AnalyticsEvent.Custom("Distancia_final", new Dictionary<string, object>
+		//{
+		//	{ "Distancia_final", distanciaFinal },
+		//}
+		//);
 	}
 
 	void BuscoCalles()
@@ -133,7 +133,14 @@ public class MotorCarreteras : MonoBehaviour {
 				Salio = true;
 				DestruyoCalles();
 			}
-		}		
+
+			if (velocidad < 16)
+			{
+				velocidad = velocidad + 0.1f * Time.deltaTime;
+			}			
+		}
+		
+		
 	}
 
 	void DestruyoCalles()
@@ -142,5 +149,20 @@ public class MotorCarreteras : MonoBehaviour {
 		TamañoCalle = 0;
 		CalleAnterior = null;
 		CrearCalles();
+	}
+
+	public void BufoVelocidad()
+	{
+		StartCoroutine(Bufo());
+	}
+
+	IEnumerator Bufo()
+	{
+		velocidad += 4;
+		yield return new WaitForSeconds(4);
+		if (velocidad > 10)
+		{
+			velocidad -= 4;
+		}		
 	}
 }
