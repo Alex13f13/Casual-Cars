@@ -9,6 +9,8 @@ public class Fundidos : MonoBehaviour
     public Image Fundido;
     public string[] escenas;
 
+    public GameObject controlsList;
+
     void Start()
     {
         Fundido.CrossFadeAlpha(0, 0.5f, false);
@@ -29,5 +31,11 @@ public class Fundidos : MonoBehaviour
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(escena);
 	}
+
+    public void DestoyControlList()
+	{
+        controlsList = GameObject.Find("Controles");
+        Destroy(controlsList);
+    }
     #endregion
 }

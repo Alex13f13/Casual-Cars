@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ControladorCoche : MonoBehaviour
 {
-    public GameObject Coche;
+public GameObject Coche;
 
     public float AnguloDeGiro;
     public float velocidad;
@@ -12,7 +12,7 @@ public class ControladorCoche : MonoBehaviour
 
     void Start()
     {
-        Coche = GameObject.FindObjectOfType<Coche>().gameObject;
+        Coche = FindObjectOfType<Coche>().gameObject;
     }
 
     void Update()
@@ -27,7 +27,7 @@ public class ControladorCoche : MonoBehaviour
 
     #region Funciones
 
-    
+
 
     #endregion
 }
