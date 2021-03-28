@@ -1,13 +1,18 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Accelerometer
     - AudioFX
     - Bullet
     - Bus
     - Coche
-    - ControladorCoche
+    - ControladorCocheBase
+    - ControladorCocheJoystic
+    - ControlesElegidos
+    - ControlsList
     - Cronometro
     - CuentaAtras
+    - FixedJoystick
     - Fundidos
     - Left
     - MotorCarreteras
@@ -17,6 +22,10 @@ ScriptsOnlyBuild:
     - Relojes
     - Right
     - RuedaOro
+    - SwipeMove
+    - TextSpeech.SpeechToText
+    - TextSpeech.TextToSpeech
+    - VoiceController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -45,7 +54,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Escenas/Controles Jugador.unity:
+    Assets/Scenes/Controles Jugador.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -63,21 +72,25 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11160}
+      Script: {instanceID: 11164}
     - Class: 114
-      Script: {instanceID: 11340}
+      Script: {instanceID: 11346}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11386}
     - Class: 114
-      Script: {instanceID: 11836}
+      Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 12120}
+      Script: {instanceID: 12152}
     - Class: 114
-      Script: {instanceID: 12864}
+      Script: {instanceID: 12342}
     - Class: 114
-      Script: {instanceID: 13246}
+      Script: {instanceID: 12670}
     - Class: 114
-      Script: {instanceID: 13290}
+      Script: {instanceID: 12930}
+    - Class: 114
+      Script: {instanceID: 13320}
+    - Class: 114
+      Script: {instanceID: 13366}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -94,7 +107,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Escenas/Intrucciones.unity:
+    Assets/Scenes/Intrucciones.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -112,21 +125,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11160}
+      Script: {instanceID: 11164}
     - Class: 114
-      Script: {instanceID: 11340}
+      Script: {instanceID: 11346}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11386}
     - Class: 114
-      Script: {instanceID: 11836}
+      Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 12120}
+      Script: {instanceID: 12152}
     - Class: 114
-      Script: {instanceID: 12864}
+      Script: {instanceID: 12930}
     - Class: 114
-      Script: {instanceID: 13246}
+      Script: {instanceID: 13320}
     - Class: 114
-      Script: {instanceID: 13290}
+      Script: {instanceID: 13366}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -143,7 +156,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Escenas/Juego.unity:
+    Assets/Scenes/Juego.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -175,53 +188,69 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11156}
+      Script: {instanceID: 11158}
     - Class: 114
-      Script: {instanceID: 11160}
+      Script: {instanceID: 11164}
     - Class: 114
-      Script: {instanceID: 11258}
+      Script: {instanceID: 11264}
     - Class: 114
-      Script: {instanceID: 11340}
+      Script: {instanceID: 11346}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11386}
     - Class: 114
-      Script: {instanceID: 11836}
+      Script: {instanceID: 11438}
     - Class: 114
-      Script: {instanceID: 11960}
+      Script: {instanceID: 11558}
     - Class: 114
-      Script: {instanceID: 12120}
+      Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 12138}
+      Script: {instanceID: 11988}
     - Class: 114
-      Script: {instanceID: 12304}
+      Script: {instanceID: 12152}
     - Class: 114
-      Script: {instanceID: 12324}
+      Script: {instanceID: 12170}
     - Class: 114
-      Script: {instanceID: 12352}
+      Script: {instanceID: 12208}
     - Class: 114
-      Script: {instanceID: 12406}
+      Script: {instanceID: 12342}
+    - Class: 114
+      Script: {instanceID: 12362}
+    - Class: 114
+      Script: {instanceID: 12392}
     - Class: 114
       Script: {instanceID: 12448}
     - Class: 114
-      Script: {instanceID: 12718}
+      Script: {instanceID: 12492}
     - Class: 114
-      Script: {instanceID: 12780}
+      Script: {instanceID: 12684}
     - Class: 114
-      Script: {instanceID: 12812}
+      Script: {instanceID: 12776}
     - Class: 114
-      Script: {instanceID: 12852}
+      Script: {instanceID: 12840}
     - Class: 114
-      Script: {instanceID: 12864}
+      Script: {instanceID: 12876}
     - Class: 114
-      Script: {instanceID: 12882}
+      Script: {instanceID: 12916}
     - Class: 114
-      Script: {instanceID: 12896}
+      Script: {instanceID: 12930}
     - Class: 114
-      Script: {instanceID: 13154}
+      Script: {instanceID: 12950}
     - Class: 114
-      Script: {instanceID: 13246}
+      Script: {instanceID: 12964}
     - Class: 114
-      Script: {instanceID: 13290}
+      Script: {instanceID: 13224}
+    - Class: 114
+      Script: {instanceID: 13278}
+    - Class: 114
+      Script: {instanceID: 13320}
+    - Class: 114
+      Script: {instanceID: 13366}
+    - Class: 114
+      Script: {instanceID: 16594}
+    - Class: 114
+      Script: {instanceID: 16596}
+    - Class: 114
+      Script: {instanceID: 21002}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -240,7 +269,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Escenas/Menu.unity:
+    Assets/Scenes/Menu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -262,23 +291,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11160}
+      Script: {instanceID: 11164}
     - Class: 114
-      Script: {instanceID: 11340}
+      Script: {instanceID: 11346}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11386}
     - Class: 114
-      Script: {instanceID: 11836}
+      Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 12120}
+      Script: {instanceID: 12152}
     - Class: 114
-      Script: {instanceID: 12352}
+      Script: {instanceID: 12392}
     - Class: 114
-      Script: {instanceID: 12864}
+      Script: {instanceID: 12930}
     - Class: 114
-      Script: {instanceID: 13246}
+      Script: {instanceID: 13320}
     - Class: 114
-      Script: {instanceID: 13290}
+      Script: {instanceID: 13366}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -304,6 +333,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Left
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Joystick
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -396,6 +431,12 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 69a11ecb33af39c067d956ce585db391
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControladorCocheBase
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -424,6 +465,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: a6220c604da18fdfc785d774b9f13e15
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControlesElegidos
+  - hash:
+      serializedVersion: 2
+      Hash: 9e27f44bbf48228f203a37254d40f8ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickSetterExample
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -516,6 +569,12 @@ ScriptsOnlyBuild:
     className: "Obst\xE1culo"
   - hash:
       serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FloatingJoystick
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -534,7 +593,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 9b433ee6e5de9ac9761157e0465d15ef
+      Hash: 7777b80384c8440bdc72cf0dfa74e552
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Fundidos
@@ -556,6 +615,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: ddb49e739ca3d624cb780246b29b7ead
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwipeMove
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -654,6 +719,24 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 824e8d4cb47ffd88ddf959dbd4526585
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DynamicJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 27d10bff527eb4785edf509ae2785417
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControlsList
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixedJoystick
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -666,10 +749,10 @@ ScriptsOnlyBuild:
     className: Pieza
   - hash:
       serializedVersion: 2
-      Hash: 69a11ecb33af39c067d956ce585db391
+      Hash: 00c2d30ca511fc348d66848d525b7ad7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ControladorCoche
+    className: ControladorCocheJoystic
   - hash:
       serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
@@ -706,6 +789,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 528e9858840cb8370d93939fff6b42d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickPlayerExample
   - hash:
       serializedVersion: 2
       Hash: c5524ab78bc2ac69dd6688a669dcfbbf
@@ -768,6 +857,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 11e80e342e66e72b6adfbea2f94e41be
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Accelerometer
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -804,6 +899,12 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 9dac16f3efc511835ac976dfae55f580
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VariableJoystick
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -838,10 +939,52 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 34965b31fd43229f4128822b4e961ad5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AndroidDebug
+  - hash:
+      serializedVersion: 2
+      Hash: cfd40c975b045cd8a848b31a3fa1fdc8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SampleSpeechToText
+  - hash:
+      serializedVersion: 2
+      Hash: 6006a2d53b6de77dfc1abaecc7c13cc2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpeechButton
+  - hash:
+      serializedVersion: 2
+      Hash: d1a5d21d9bcc6c4678983849c91d8c5d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TextSpeech
+    className: TextToSpeech
+  - hash:
+      serializedVersion: 2
+      Hash: 261e4a8fb1a9635d5ec126f5eeb3588c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TextSpeech
+    className: SpeechToText
+  - hash:
+      serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RotateAnim
+  - hash:
+      serializedVersion: 2
+      Hash: b5d01a44c9a694c6b9bce4626dd0a12e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VoiceController
   platform: 13
   scenePathNames:
-  - Assets/Escenas/Menu.unity
-  - Assets/Escenas/Controles Jugador.unity
-  - Assets/Escenas/Intrucciones.unity
-  - Assets/Escenas/Juego.unity
+  - Assets/Scenes/Menu.unity
+  - Assets/Scenes/Controles Jugador.unity
+  - Assets/Scenes/Intrucciones.unity
+  - Assets/Scenes/Juego.unity
   playerPath: D:/Documentos Alejandro/UFV/TFG/Juego/TFG_Casual_Cars/Builds/Casual_Cars.apk
