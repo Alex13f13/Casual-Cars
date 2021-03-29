@@ -75,7 +75,9 @@
     <Compile Include="Assets\Scripts\Coche.cs" />
     <Compile Include="Assets\Scripts\ControladorCocheBase.cs" />
     <Compile Include="Assets\Scripts\Controles\Accelerometer.cs" />
+    <Compile Include="Assets\Scripts\Controles\BufoUI.cs" />
     <Compile Include="Assets\Scripts\Controles\ControladorCocheJoystic.cs" />
+    <Compile Include="Assets\Scripts\Controles\DisparoUI.cs" />
     <Compile Include="Assets\Scripts\Controles\FlechasLaterales\Left.cs" />
     <Compile Include="Assets\Scripts\Controles\FlechasLaterales\Right.cs" />
     <Compile Include="Assets\Scripts\Controles\SwipeMove.cs" />
