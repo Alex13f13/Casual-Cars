@@ -67,7 +67,6 @@
     <Compile Include="Assets\Prefabs\Controls\Joystick Pack\Scripts\Editor\FloatingJoystickEditor.cs" />
     <Compile Include="Assets\Prefabs\Controls\Joystick Pack\Scripts\Editor\JoystickEditor.cs" />
     <Compile Include="Assets\Prefabs\Controls\Joystick Pack\Scripts\Editor\VariableJoystickEditor.cs" />
-    <Compile Include="Assets\Prefabs\Controls\Voice\1stTry\SpeechAndText\Editor\BuildPostProcessor.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>D:/Documentos Alejandro/UFV/TFG/Juego/TFG_Casual_Cars/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>

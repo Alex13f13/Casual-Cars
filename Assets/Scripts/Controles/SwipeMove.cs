@@ -19,7 +19,7 @@ public class SwipeMove : MonoBehaviour
     public float swipeRange;
     public float tapRange;
 
-    public float horizontal;
+    private float horizontal;
 
     void Start()
     {
