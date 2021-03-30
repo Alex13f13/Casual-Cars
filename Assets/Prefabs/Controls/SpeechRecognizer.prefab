@@ -43,6 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4acb6dcb8d24e9345becb7344382769d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startListeningBtn: {fileID: 0}
-  continuousListeningTgle: {fileID: 0}
   resultsTxt: {fileID: 0}
+  listen: 0
+  Coche: {fileID: 0}
+  Controller: {fileID: 0}
+  GameOver: {fileID: 0}
+  ContadorNumerosGO: {fileID: 0}
+  AnguloDeGiro: 0
+  velocidad: 0

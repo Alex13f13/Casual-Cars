@@ -5,14 +5,15 @@ using static SpeechRecognizerPlugin;
 
 public class SpeechRecognizer : MonoBehaviour, ISpeechRecognizerPlugin
 {
-    [SerializeField] private TextMeshProUGUI resultsTxt = null;
-
     private SpeechRecognizerPlugin plugin = null;
 
     public bool listen;
 
     public GameObject Coche;
     public GameObject Controller;
+
+    public GameObject GameOver;
+    public GameObject ContadorNumerosGO;
 
     public float AnguloDeGiro;
     public float velocidad;
@@ -23,6 +24,7 @@ public class SpeechRecognizer : MonoBehaviour, ISpeechRecognizerPlugin
     {
         plugin = GetPlatformPluginVersion(this.gameObject.name);
         Coche = FindObjectOfType<Coche>().gameObject;
+        ContadorNumerosGO = GameObject.Find("ContadorNumeros");
         StartListening();
     }
 
@@ -50,13 +52,16 @@ public class SpeechRecognizer : MonoBehaviour, ISpeechRecognizerPlugin
 
     public void OnResult(string recognizedResult)
     {
+        if (GameOver.activeSelf || ContadorNumerosGO.activeSelf)
+        {
+            return;
+        }
+
         char[] delimiterChars = { '~' };
         string[] result = recognizedResult.Split(delimiterChars);
 
-        resultsTxt.text = "";
         for (int i = 0; i < result.Length; i++)
         {
-            resultsTxt.text += result[i] + '\n';
 
             if (result[i] == "derecha" || result[i] == "right")
             {

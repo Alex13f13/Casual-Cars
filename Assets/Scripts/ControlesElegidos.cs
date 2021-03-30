@@ -20,7 +20,7 @@ public class ControlesElegidos : MonoBehaviour
 
         controlesElegidos = controlsList.ControlesElegidos;
 
-        //ActivarControles();
+        ActivarControles();
     }
 
     #region Funciones

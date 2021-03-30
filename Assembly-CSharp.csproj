@@ -75,13 +75,17 @@
     <Compile Include="Assets\Scripts\Coche.cs" />
     <Compile Include="Assets\Scripts\ControladorCocheBase.cs" />
     <Compile Include="Assets\Scripts\Controles\Accelerometer.cs" />
+    <Compile Include="Assets\Scripts\Controles\AccelerometerBufo.cs" />
     <Compile Include="Assets\Scripts\Controles\BufoUI.cs" />
     <Compile Include="Assets\Scripts\Controles\ControladorCocheJoystic.cs" />
     <Compile Include="Assets\Scripts\Controles\DisparoUI.cs" />
     <Compile Include="Assets\Scripts\Controles\FlechasLaterales\Left.cs" />
     <Compile Include="Assets\Scripts\Controles\FlechasLaterales\Right.cs" />
+    <Compile Include="Assets\Scripts\Controles\SwipeDisparo.cs" />
     <Compile Include="Assets\Scripts\Controles\SwipeMove.cs" />
     <Compile Include="Assets\Scripts\Controles\Voice\SpeechRecognizer.cs" />
+    <Compile Include="Assets\Scripts\Controles\Voice\SpeechRecognizerBufo.cs" />
+    <Compile Include="Assets\Scripts\Controles\Voice\SpeechRecognizerDisparo.cs" />
     <Compile Include="Assets\Scripts\Controles\Voice\SpeechRecognizerPlugin.cs" />
     <Compile Include="Assets\Scripts\Controles\Voice\SpeechRecognizerPlugin_Android.cs" />
     <Compile Include="Assets\Scripts\Controles\Voice\SpeechRecognizerPlugin_Editor.cs" />

@@ -9,13 +9,8 @@ public class DisparoUI : MonoBehaviour
 	public GameObject GameOver;
 	public GameObject ContadorNumerosGO;
 
-	public GameObject motorCarreterasGO;
-	public MotorCarreteras MotorCarreteras;
-
 	public void Start()
 	{
-		motorCarreterasGO = GameObject.Find("MotorCarreteras");
-		MotorCarreteras = motorCarreterasGO.GetComponent<MotorCarreteras>();
 		ContadorNumerosGO = GameObject.Find("ContadorNumeros");
 	}
 

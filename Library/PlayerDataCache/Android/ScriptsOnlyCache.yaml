@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Accelerometer
+    - AccelerometerBufo
     - AudioFX
     - BufoUI
     - Bullet
@@ -14,7 +15,7 @@ ScriptsOnlyBuild:
     - Cronometro
     - CuentaAtras
     - DisparoUI
-    - FixedJoystick
+    - DynamicJoystick
     - Fundidos
     - Left
     - MotorCarreteras
@@ -25,6 +26,9 @@ ScriptsOnlyBuild:
     - Right
     - RuedaOro
     - SpeechRecognizer
+    - SpeechRecognizerBufo
+    - SpeechRecognizerDisparo
+    - SwipeDisparo
     - SwipeMove
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -41,7 +45,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
-    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -86,19 +89,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11412}
     - Class: 114
-      Script: {instanceID: 11890}
+      Script: {instanceID: 11894}
     - Class: 114
-      Script: {instanceID: 12180}
+      Script: {instanceID: 12184}
     - Class: 114
-      Script: {instanceID: 12370}
+      Script: {instanceID: 12374}
     - Class: 114
-      Script: {instanceID: 12700}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 12962}
+      Script: {instanceID: 12970}
     - Class: 114
-      Script: {instanceID: 13354}
+      Script: {instanceID: 13366}
     - Class: 114
-      Script: {instanceID: 13402}
+      Script: {instanceID: 13414}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -139,15 +142,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11412}
     - Class: 114
-      Script: {instanceID: 11890}
+      Script: {instanceID: 11894}
     - Class: 114
-      Script: {instanceID: 12180}
+      Script: {instanceID: 12184}
     - Class: 114
-      Script: {instanceID: 12962}
+      Script: {instanceID: 12970}
     - Class: 114
-      Script: {instanceID: 13354}
+      Script: {instanceID: 13366}
     - Class: 114
-      Script: {instanceID: 13402}
+      Script: {instanceID: 13414}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -208,61 +211,65 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11464}
     - Class: 114
-      Script: {instanceID: 11586}
+      Script: {instanceID: 11550}
+    - Class: 114
+      Script: {instanceID: 11588}
     - Class: 114
       Script: {instanceID: 11890}
     - Class: 114
-      Script: {instanceID: 12016}
+      Script: {instanceID: 11894}
     - Class: 114
-      Script: {instanceID: 12180}
+      Script: {instanceID: 12020}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 12184}
     - Class: 114
-      Script: {instanceID: 12236}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12370}
+      Script: {instanceID: 12240}
     - Class: 114
-      Script: {instanceID: 12390}
+      Script: {instanceID: 12374}
     - Class: 114
-      Script: {instanceID: 12420}
+      Script: {instanceID: 12394}
     - Class: 114
-      Script: {instanceID: 12476}
+      Script: {instanceID: 12424}
     - Class: 114
-      Script: {instanceID: 12520}
+      Script: {instanceID: 12474}
     - Class: 114
-      Script: {instanceID: 12628}
+      Script: {instanceID: 12482}
     - Class: 114
-      Script: {instanceID: 12714}
+      Script: {instanceID: 12526}
     - Class: 114
-      Script: {instanceID: 12806}
+      Script: {instanceID: 12670}
     - Class: 114
-      Script: {instanceID: 12858}
+      Script: {instanceID: 12710}
     - Class: 114
-      Script: {instanceID: 12872}
+      Script: {instanceID: 12814}
     - Class: 114
-      Script: {instanceID: 12878}
+      Script: {instanceID: 12866}
     - Class: 114
-      Script: {instanceID: 12908}
+      Script: {instanceID: 12880}
     - Class: 114
-      Script: {instanceID: 12948}
+      Script: {instanceID: 12916}
     - Class: 114
-      Script: {instanceID: 12962}
+      Script: {instanceID: 12956}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 12970}
     - Class: 114
-      Script: {instanceID: 12996}
+      Script: {instanceID: 12990}
     - Class: 114
-      Script: {instanceID: 13258}
+      Script: {instanceID: 13004}
     - Class: 114
-      Script: {instanceID: 13312}
+      Script: {instanceID: 13126}
     - Class: 114
-      Script: {instanceID: 13354}
+      Script: {instanceID: 13268}
     - Class: 114
-      Script: {instanceID: 13402}
+      Script: {instanceID: 13322}
     - Class: 114
-      Script: {instanceID: 20702}
+      Script: {instanceID: 13332}
     - Class: 114
-      Script: {instanceID: 24632}
+      Script: {instanceID: 13366}
+    - Class: 114
+      Script: {instanceID: 13414}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -313,25 +320,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11412}
     - Class: 114
-      Script: {instanceID: 11890}
+      Script: {instanceID: 11894}
     - Class: 114
-      Script: {instanceID: 11918}
+      Script: {instanceID: 11922}
     - Class: 114
-      Script: {instanceID: 12180}
+      Script: {instanceID: 12184}
     - Class: 114
-      Script: {instanceID: 12420}
+      Script: {instanceID: 12424}
     - Class: 114
-      Script: {instanceID: 12628}
+      Script: {instanceID: 12634}
     - Class: 114
-      Script: {instanceID: 12642}
+      Script: {instanceID: 12648}
     - Class: 114
-      Script: {instanceID: 12962}
+      Script: {instanceID: 12970}
     - Class: 114
-      Script: {instanceID: 13152}
+      Script: {instanceID: 13162}
     - Class: 114
-      Script: {instanceID: 13354}
+      Script: {instanceID: 13366}
     - Class: 114
-      Script: {instanceID: 13402}
+      Script: {instanceID: 13414}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -479,6 +486,12 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: a52ddb438296a0a874a7e16e5394bb6d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpeechRecognizerDisparo
+  - hash:
+      serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -555,6 +568,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Analytics.Tracker.dll
     namespaceName: UnityEngine.Analytics
     className: AnalyticsTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 79fd17861505544f1cbbae3c8f5399dd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DisparoUI
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -683,6 +702,12 @@ ScriptsOnlyBuild:
     className: AudioFX
   - hash:
       serializedVersion: 2
+      Hash: c76b2875cfce5479420853aad7c73129
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpeechRecognizerBufo
+  - hash:
+      serializedVersion: 2
       Hash: c5524ab78bc2ac69dd6688a669dcfbbf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -755,6 +780,12 @@ ScriptsOnlyBuild:
     className: ControlsList
   - hash:
       serializedVersion: 2
+      Hash: b5f597935600025ca1044a3e45bada24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AccelerometerBufo
+  - hash:
+      serializedVersion: 2
       Hash: ce669872a2be11bc686ea22961d8a3bb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -773,7 +804,7 @@ ScriptsOnlyBuild:
     className: Pieza
   - hash:
       serializedVersion: 2
-      Hash: 2776f59b84e9d92a9178b5a7ccb85c30
+      Hash: df79ba0b83e812d4399d58f6062662a5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpeechRecognizer
@@ -845,6 +876,12 @@ ScriptsOnlyBuild:
     className: CuentaAtras
   - hash:
       serializedVersion: 2
+      Hash: 85499559257cbc8f58ba35f9f5309a2b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BufoUI
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -891,6 +928,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Accelerometer
+  - hash:
+      serializedVersion: 2
+      Hash: 8748c2ba3a64f170574ae8f86283e80b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwipeDisparo
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -969,18 +1012,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 85499559257cbc8f58ba35f9f5309a2b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BufoUI
-  - hash:
-      serializedVersion: 2
-      Hash: b5ead8e8f90df2a62e57c07241661a26
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DisparoUI
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
