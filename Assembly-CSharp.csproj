@@ -93,7 +93,9 @@
     <Compile Include="Assets\Scripts\ControlsList.cs" />
     <Compile Include="Assets\Scripts\Cronometro.cs" />
     <Compile Include="Assets\Scripts\CuentaAtras.cs" />
+    <Compile Include="Assets\Scripts\DeleteOnClick.cs" />
     <Compile Include="Assets\Scripts\Fundidos.cs" />
+    <Compile Include="Assets\Scripts\GameMasterAnalytics.cs" />
     <Compile Include="Assets\Scripts\MotorCarreteras.cs" />
     <Compile Include="Assets\Scripts\Objects\Bus.cs" />
     <Compile Include="Assets\Scripts\Objects\Obstáculo.cs" />

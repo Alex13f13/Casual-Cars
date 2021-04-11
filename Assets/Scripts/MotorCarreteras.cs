@@ -30,6 +30,7 @@ public class MotorCarreteras : MonoBehaviour {
 	public AudioFX audioFXScript;
 	public GameObject bgFinalGO;
 
+	public GameObject AnalyticsGO;
 
 	void Start () 
 	{
@@ -51,6 +52,8 @@ public class MotorCarreteras : MonoBehaviour {
 
 		cocheGO = GameObject.FindObjectOfType<Coche>().gameObject;
 
+		AnalyticsGO = GameObject.Find("GameMasterAnalytics");
+
 		velocidad = 6;
 		MedirPantalla();
 		BuscoCalles();
@@ -61,6 +64,8 @@ public class MotorCarreteras : MonoBehaviour {
 		cocheGO.GetComponent<AudioSource>().Stop();
 		audioFXScript.FXMusic();
 		bgFinalGO.SetActive(true);
+
+		AnalyticsGO.GetComponent<GameMasterAnalytics>().EndedGame(distanciaFinal);
 
 		//AnalyticsEvent.Custom("Distancia_final", new Dictionary<string, object>
 		//{

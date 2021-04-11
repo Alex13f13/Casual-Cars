@@ -43,7 +43,6 @@ public class BufoUI : MonoBehaviour
 		if (count >= 1)
 		{
 			StartCoroutine(Clock());
-			Debug.Log("count >= 1");
 		}
 		else
 		{

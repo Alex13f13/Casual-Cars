@@ -7,10 +7,13 @@ public class Obstáculo : MonoBehaviour
 	public GameObject CronometroGO;
 	public Cronometro CronometroScript;
 
+	public GameObject AnalyticsGO;
+
 	void Start()
 	{
 		CronometroGO = GameObject.FindObjectOfType<Cronometro>().gameObject;
 		CronometroScript = CronometroGO.GetComponent<Cronometro>();
+		AnalyticsGO = GameObject.Find("GameMasterAnalytics");
 	}
 
 	#region Funciones
@@ -25,6 +28,7 @@ public class Obstáculo : MonoBehaviour
 		}
 		else
 		{
+			AnalyticsGO.GetComponent<GameMasterAnalytics>().obstaculo++;
 			Destroy(this.gameObject);
 			Destroy(collision.gameObject);
 		}

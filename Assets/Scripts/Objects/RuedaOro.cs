@@ -7,10 +7,13 @@ public class RuedaOro : MonoBehaviour
 	public GameObject CronometroGO;
 	public Cronometro CronometroScript;
 
+	public GameObject AnalyticsGO;
+
 	void Start()
 	{
 		CronometroGO = GameObject.FindObjectOfType<Cronometro>().gameObject;
 		CronometroScript = CronometroGO.GetComponent<Cronometro>();
+		AnalyticsGO = GameObject.Find("GameMasterAnalytics");
 	}
 
 	#region Funciones
@@ -19,8 +22,8 @@ public class RuedaOro : MonoBehaviour
 	{
 		if (collision.GetComponent<Coche>() != null)
 		{
+			AnalyticsGO.GetComponent<GameMasterAnalytics>().ruedaOro++;
 			CronometroScript.distancia = CronometroScript.distancia + 20;
-			Debug.Log("Rueda Oro");
 			Destroy(gameObject);
 		}
 	}

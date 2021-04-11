@@ -6,6 +6,7 @@ public class ControladorCocheJoystic : MonoBehaviour
 {
     public GameObject Coche;
     public GameObject Controller;
+    public GameObject GO;
 
     public float AnguloDeGiro;
     public float velocidad;
@@ -26,6 +27,18 @@ public class ControladorCocheJoystic : MonoBehaviour
         GiroEnZ = joystick.Horizontal * -AnguloDeGiro;
 
         Coche.transform.rotation = Quaternion.Euler(0,0,GiroEnZ);
+
+
+		if (GO == null)
+		{
+            return;           
+        }
+
+        if (joystick.Horizontal > 0 || joystick.Horizontal < 0)
+        {
+            Destroy(GO);
+        }
+
     }
 
     #region Funciones

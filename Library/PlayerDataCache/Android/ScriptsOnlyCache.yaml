@@ -17,6 +17,7 @@ ScriptsOnlyBuild:
     - DisparoUI
     - DynamicJoystick
     - Fundidos
+    - GameMasterAnalytics
     - Left
     - MotorCarreteras
     - "Obst\xE1culo"
@@ -91,17 +92,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11894}
     - Class: 114
-      Script: {instanceID: 12184}
+      Script: {instanceID: 12186}
     - Class: 114
-      Script: {instanceID: 12374}
+      Script: {instanceID: 12378}
     - Class: 114
-      Script: {instanceID: 12706}
+      Script: {instanceID: 12710}
     - Class: 114
-      Script: {instanceID: 12970}
+      Script: {instanceID: 12974}
     - Class: 114
-      Script: {instanceID: 13366}
+      Script: {instanceID: 13370}
     - Class: 114
-      Script: {instanceID: 13414}
+      Script: {instanceID: 13418}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -144,13 +145,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11894}
     - Class: 114
-      Script: {instanceID: 12184}
+      Script: {instanceID: 12186}
     - Class: 114
-      Script: {instanceID: 12970}
+      Script: {instanceID: 12974}
     - Class: 114
-      Script: {instanceID: 13366}
+      Script: {instanceID: 13370}
     - Class: 114
-      Script: {instanceID: 13414}
+      Script: {instanceID: 13418}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -219,57 +220,57 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11894}
     - Class: 114
-      Script: {instanceID: 12020}
+      Script: {instanceID: 12022}
     - Class: 114
-      Script: {instanceID: 12184}
+      Script: {instanceID: 12186}
     - Class: 114
-      Script: {instanceID: 12202}
+      Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 12240}
+      Script: {instanceID: 12244}
     - Class: 114
-      Script: {instanceID: 12374}
+      Script: {instanceID: 12378}
     - Class: 114
-      Script: {instanceID: 12394}
+      Script: {instanceID: 12398}
     - Class: 114
-      Script: {instanceID: 12424}
+      Script: {instanceID: 12428}
     - Class: 114
-      Script: {instanceID: 12474}
+      Script: {instanceID: 12478}
     - Class: 114
-      Script: {instanceID: 12482}
+      Script: {instanceID: 12486}
     - Class: 114
-      Script: {instanceID: 12526}
+      Script: {instanceID: 12530}
     - Class: 114
-      Script: {instanceID: 12670}
+      Script: {instanceID: 12674}
     - Class: 114
-      Script: {instanceID: 12710}
+      Script: {instanceID: 12714}
     - Class: 114
-      Script: {instanceID: 12814}
+      Script: {instanceID: 12818}
     - Class: 114
-      Script: {instanceID: 12866}
+      Script: {instanceID: 12870}
     - Class: 114
-      Script: {instanceID: 12880}
+      Script: {instanceID: 12884}
     - Class: 114
-      Script: {instanceID: 12916}
+      Script: {instanceID: 12920}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 12960}
     - Class: 114
-      Script: {instanceID: 12970}
+      Script: {instanceID: 12974}
     - Class: 114
-      Script: {instanceID: 12990}
+      Script: {instanceID: 12994}
     - Class: 114
-      Script: {instanceID: 13004}
+      Script: {instanceID: 13008}
     - Class: 114
-      Script: {instanceID: 13126}
+      Script: {instanceID: 13130}
     - Class: 114
-      Script: {instanceID: 13268}
+      Script: {instanceID: 13272}
     - Class: 114
-      Script: {instanceID: 13322}
+      Script: {instanceID: 13326}
     - Class: 114
-      Script: {instanceID: 13332}
+      Script: {instanceID: 13336}
     - Class: 114
-      Script: {instanceID: 13366}
+      Script: {instanceID: 13370}
     - Class: 114
-      Script: {instanceID: 13414}
+      Script: {instanceID: 13418}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -322,23 +323,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11894}
     - Class: 114
-      Script: {instanceID: 11922}
+      Script: {instanceID: 11924}
     - Class: 114
-      Script: {instanceID: 12184}
+      Script: {instanceID: 12186}
     - Class: 114
-      Script: {instanceID: 12424}
+      Script: {instanceID: 12236}
     - Class: 114
-      Script: {instanceID: 12634}
+      Script: {instanceID: 12428}
     - Class: 114
-      Script: {instanceID: 12648}
+      Script: {instanceID: 12638}
     - Class: 114
-      Script: {instanceID: 12970}
+      Script: {instanceID: 12652}
     - Class: 114
-      Script: {instanceID: 13162}
+      Script: {instanceID: 12974}
     - Class: 114
-      Script: {instanceID: 13366}
+      Script: {instanceID: 13166}
     - Class: 114
-      Script: {instanceID: 13414}
+      Script: {instanceID: 13370}
+    - Class: 114
+      Script: {instanceID: 13418}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -396,7 +399,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 806a50947c60ba8fbfcc562039616d4b
+      Hash: 81c15bdb146c4d9f5e3c6ba0cac8db0f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MotorCarreteras
@@ -504,7 +507,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: a6220c604da18fdfc785d774b9f13e15
+      Hash: c2391cd4d8e714acb27781bb9b376422
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ControlesElegidos
@@ -588,6 +591,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 9fc190c55f80991aa18abe14bc1305ed
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DeleteOnClick
+  - hash:
+      serializedVersion: 2
       Hash: b8a5e8091ab0b8861d2add371082c5e0
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -606,7 +615,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: c5524ab78bc2ac69dd6688a669dcfbbf
+      Hash: 96893d456547498908daff56bd692e25
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: "Obst\xE1culo"
@@ -660,6 +669,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: 9a3283b7be53937df025f2819439dcc0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameMasterAnalytics
+  - hash:
+      serializedVersion: 2
       Hash: f234bc25261bb0c7ea1161b774e79191
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -708,7 +723,7 @@ ScriptsOnlyBuild:
     className: SpeechRecognizerBufo
   - hash:
       serializedVersion: 2
-      Hash: c5524ab78bc2ac69dd6688a669dcfbbf
+      Hash: 96893d456547498908daff56bd692e25
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Bus
@@ -720,7 +735,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: c5524ab78bc2ac69dd6688a669dcfbbf
+      Hash: 96893d456547498908daff56bd692e25
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RuedaOro
@@ -810,7 +825,7 @@ ScriptsOnlyBuild:
     className: SpeechRecognizer
   - hash:
       serializedVersion: 2
-      Hash: 00c2d30ca511fc348d66848d525b7ad7
+      Hash: ae34c1e0e4b389aacd6306ea7660de57
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ControladorCocheJoystic
@@ -858,7 +873,7 @@ ScriptsOnlyBuild:
     className: JoystickPlayerExample
   - hash:
       serializedVersion: 2
-      Hash: c5524ab78bc2ac69dd6688a669dcfbbf
+      Hash: 96893d456547498908daff56bd692e25
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Relojes
@@ -894,7 +909,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 6c8b3a57b348e39bd422300d69a1a89c
+      Hash: 4879faa3b13e0f80966bd675d4873e4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Policia

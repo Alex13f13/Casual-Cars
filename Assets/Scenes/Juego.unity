@@ -195,6 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!212 &16418427
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -387,6 +388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &22446810
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1241,6 +1243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &91934513
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1364,6 +1367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &94973118
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2415,6 +2419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &183980745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3236,6 +3241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coche: {fileID: 0}
   Controller: {fileID: 828414548}
+  GO: {fileID: 1257234263}
   AnguloDeGiro: 30
   velocidad: 6
   joystick: {fileID: 253637702}
@@ -3966,6 +3972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &299315665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4258,6 +4265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &301515328
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4548,6 +4556,85 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 311595458}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &317291168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 317291169}
+  - component: {fileID: 317291171}
+  - component: {fileID: 317291170}
+  m_Layer: 5
+  m_Name: "Toca aqu\xED para que aparezca el Joystic"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &317291169
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317291168}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1257234264}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -158.1, y: -219}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &317291170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317291168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 49
+    m_FontStyle: 1
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 88
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Toca en esta zona para el uso del Joystic
+
+'
+--- !u!222 &317291171
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317291168}
+  m_CullTransparentMesh: 0
 --- !u!1001 &321712125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4914,6 +5001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &338373566
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5037,6 +5125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &344858715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5936,6 +6025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!212 &402044279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6203,6 +6293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &405398016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6912,6 +7003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &461487424
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8206,6 +8298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &595253187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9424,6 +9517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!212 &681514395
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10073,6 +10167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &718853590
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10392,6 +10487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!212 &733034876
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10630,6 +10726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!212 &739449562
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11037,6 +11134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!212 &772373248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12168,6 +12266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!212 &855094578
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12955,6 +13054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &955565037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13153,6 +13253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &963981337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13720,6 +13821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1013576467
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14110,7 +14212,7 @@ PrefabInstance:
     - target: {fileID: 5037975149294872944, guid: e86bcd9a3e40c894787919c0be2dc11d,
         type: 3}
       propertyPath: m_Name
-      value: SpeechRecognizerDisparo
+      value: Comandos Voz
       objectReference: {fileID: 0}
     - target: {fileID: 5037975149294872944, guid: e86bcd9a3e40c894787919c0be2dc11d,
         type: 3}
@@ -14289,6 +14391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1064415893
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15303,6 +15406,7 @@ MonoBehaviour:
   - {fileID: 2132004233}
   controlesElegidos: 
   controlsGO: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
   controlsList: {fileID: 0}
 --- !u!1 &1150874040 stripped
 GameObject:
@@ -15582,6 +15686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1164794716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16262,6 +16367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1211415435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16385,6 +16491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1215867112
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16669,6 +16776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1251897185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16792,6 +16900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1252846788
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16868,6 +16977,80 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1257234263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1257234264}
+  - component: {fileID: 1257234266}
+  - component: {fileID: 1257234265}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1257234264
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257234263}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 317291169}
+  m_Father: {fileID: 253637700}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1257234265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257234263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.25490198}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1257234266
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257234263}
+  m_CullTransparentMesh: 0
 --- !u!1 &1271606629
 GameObject:
   m_ObjectHideFlags: 0
@@ -16942,6 +17125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!212 &1271606633
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17566,6 +17750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1366524926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18083,6 +18268,7 @@ MonoBehaviour:
   audioFXGO: {fileID: 0}
   audioFXScript: {fileID: 0}
   bgFinalGO: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!4 &1408996906
 Transform:
   m_ObjectHideFlags: 0
@@ -18314,6 +18500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1425483155
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18931,6 +19118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1467327688
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19204,6 +19392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1489730012
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19974,6 +20163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1562543457
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20379,6 +20569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1600762800
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21192,6 +21383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1670815603
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21370,6 +21562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1695868192
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22156,6 +22349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1740968919
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22709,6 +22903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1819870519
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22945,7 +23140,7 @@ PrefabInstance:
     - target: {fileID: 5037975149294872944, guid: e86bcd9a3e40c894787919c0be2dc11d,
         type: 3}
       propertyPath: m_Name
-      value: SpeechRecognizerMove
+      value: Comandos Voz
       objectReference: {fileID: 0}
     - target: {fileID: 5037975149294872944, guid: e86bcd9a3e40c894787919c0be2dc11d,
         type: 3}
@@ -23355,6 +23550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1833430646
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23741,6 +23937,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1876738425
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24354,6 +24551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1913908369
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24890,6 +25088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CronometroGO: {fileID: 0}
   CronometroScript: {fileID: 0}
+  AnalyticsGO: {fileID: 0}
 --- !u!61 &1965316052
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26322,7 +26521,7 @@ PrefabInstance:
     - target: {fileID: 8135886326569738825, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
       propertyPath: m_Name
-      value: Dynamic Joystick
+      value: Joystick
       objectReference: {fileID: 0}
     - target: {fileID: 8135886326569738825, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
@@ -26391,7 +26590,7 @@ PrefabInstance:
     - target: {fileID: 607997545544978269, guid: ebdc89230a7d01946b113eed5dd86759,
         type: 3}
       propertyPath: m_Name
-      value: DisparoUI
+      value: Boton UI
       objectReference: {fileID: 0}
     - target: {fileID: 607997545544978269, guid: ebdc89230a7d01946b113eed5dd86759,
         type: 3}
@@ -26527,7 +26726,7 @@ PrefabInstance:
     - target: {fileID: 2037847478333294656, guid: 94567217e54fded4296c15c37d7f6b1b,
         type: 3}
       propertyPath: m_Name
-      value: BufoUI
+      value: Boton UI
       objectReference: {fileID: 0}
     - target: {fileID: 2037847478333294656, guid: 94567217e54fded4296c15c37d7f6b1b,
         type: 3}
@@ -26656,7 +26855,7 @@ PrefabInstance:
     - target: {fileID: 2797907494077314553, guid: 2e5d44afabb3d8943b715a4ee9481581,
         type: 3}
       propertyPath: m_Name
-      value: Accelerometer
+      value: Inclinacion
       objectReference: {fileID: 0}
     - target: {fileID: 2797907494077314553, guid: 2e5d44afabb3d8943b715a4ee9481581,
         type: 3}
@@ -26890,7 +27089,7 @@ PrefabInstance:
     - target: {fileID: 2915610429527687535, guid: 1787bc0ad2b397144a2233252f60e4a3,
         type: 3}
       propertyPath: m_Name
-      value: FlechasLaterales
+      value: Boton UI
       objectReference: {fileID: 0}
     - target: {fileID: 2915610429527687535, guid: 1787bc0ad2b397144a2233252f60e4a3,
         type: 3}
@@ -27139,7 +27338,7 @@ PrefabInstance:
     - target: {fileID: 2392048303524152786, guid: 002272a8033d3a74f98c2dad12774f56,
         type: 3}
       propertyPath: m_Name
-      value: SwipeDisparo
+      value: Swipe
       objectReference: {fileID: 0}
     - target: {fileID: 2392048303524152786, guid: 002272a8033d3a74f98c2dad12774f56,
         type: 3}
@@ -27180,7 +27379,7 @@ PrefabInstance:
     - target: {fileID: 5222401942149555473, guid: 008d32efe8142cf499be84868aae5887,
         type: 3}
       propertyPath: m_Name
-      value: AccelerometerBufo
+      value: Inclinacion
       objectReference: {fileID: 0}
     - target: {fileID: 5222401942149555473, guid: 008d32efe8142cf499be84868aae5887,
         type: 3}
@@ -27488,7 +27687,7 @@ PrefabInstance:
     - target: {fileID: 8840144778724070527, guid: c4a990a2171e0004587ec0420464b990,
         type: 3}
       propertyPath: m_Name
-      value: SpeechRecognizerBufo
+      value: Comandos Voz
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4a990a2171e0004587ec0420464b990, type: 3}

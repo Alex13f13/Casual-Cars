@@ -7,6 +7,8 @@ public class Relojes : MonoBehaviour
 	public GameObject CronometroGO;
 	public Cronometro CronometroScript;
 
+	public GameObject AnalyticsGO;
+
 	//public GameObject audioFX;
 	//public AudioFX AudioFXscript;
 
@@ -17,6 +19,7 @@ public class Relojes : MonoBehaviour
 	{
 		CronometroGO = GameObject.FindObjectOfType<Cronometro>().gameObject;
 		CronometroScript = CronometroGO.GetComponent<Cronometro>();
+		AnalyticsGO = GameObject.Find("GameMasterAnalytics");
 
 		//audioFX = GameObject.FindObjectOfType<AudioFX>().gameObject;
 		//AudioFXscript = audioFX.GetComponent<AudioFX>();
@@ -26,6 +29,7 @@ public class Relojes : MonoBehaviour
 		if (collision.GetComponent<Coche>() != null)
 		{
 			//AudioFXscript.FXSonidoCoche();
+			AnalyticsGO.GetComponent<GameMasterAnalytics>().relojes++;
 			CronometroScript.tiempo = CronometroScript.tiempo + 10;
 			Destroy(this.gameObject);
 		}

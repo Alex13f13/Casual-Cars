@@ -9,12 +9,13 @@ public class Policia : MonoBehaviour
 
 	public GameObject CronometroGO;
 	public Cronometro CronometroScript;
-
+	public GameObject AnalyticsGO;
 
 	void Start()
 	{
 		CronometroGO = FindObjectOfType<Cronometro>().gameObject;
 		CronometroScript = CronometroGO.GetComponent<Cronometro>();
+		AnalyticsGO = GameObject.Find("GameMasterAnalytics");
 	}
 
 	private void Update()
@@ -31,6 +32,7 @@ public class Policia : MonoBehaviour
 				inpact[1].SetActive(true);
 				break;
 			case 3:
+				AnalyticsGO.GetComponent<GameMasterAnalytics>().policia++;
 				Destroy(gameObject);
 				break;
 		}
@@ -47,7 +49,7 @@ public class Policia : MonoBehaviour
 		}
 		else if(collision.GetComponent<Bullet>() != null)
 		{
-			life++;
+			life++;			
 			Destroy(collision.gameObject);
 		}
 	}
